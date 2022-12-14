@@ -1,0 +1,54 @@
+.form1{
+    width: 400px;
+    height: 500px;
+    border: 7px solid brown;
+}
+.submit1{
+  background-color: green;
+                color: white;
+                width: 80px;
+                height: 40px;
+}
+.submit1:hover{
+    background-color: peru;
+    color: aqua;
+
+    border-radius: 50%;
+
+
+}
+.cancel1{
+   background-color: maroon;
+                color: white;
+                width: 80px;
+                height: 40px;
+            
+}
+.cancel1:hover {
+    background-color: aqua;
+                color: orange;
+                width: 80px;
+                height: 40px;
+                border-radius: 50%;
+}
+
+.top1:hover{
+    background-color: blueviolet;
+    color:white;
+}
+.top1:visited{
+    background-color: blue;
+    color: brown;
+}
+.top1:active{
+    background-color:green;
+    color: beige;
+}
+.div1{
+    width: 400px;
+    height: 200px;
+    border: 5px dashed greenyellow;
+    font-size: large;
+    background-image: url(/HTML/images/Mario.png);
+    background-image: cover;
+}
