@@ -1,0 +1,22 @@
+.img1{
+    float:right;
+    margin-left: 20px;
+
+}
+.p1{
+    margin-top: 40px;
+}
+.div1{
+   
+    background-color: brown;
+}
+.p2{
+border: 3px solid aqua;
+
+}
+.img2{
+    float:right;
+    margin-left: 20px;
+    clear:right;
+overflow: auto;
+}
