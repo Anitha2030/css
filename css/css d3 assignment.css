@@ -1,0 +1,137 @@
+.div1{
+    width: 200px;
+    height: 200px;
+    border: 2px solid blueviolet;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    background-color: aqua;
+    background-image: url(/HTML/images/milk&more.png);
+    position: sticky;
+    top:0%
+
+}
+.div1:hover{
+   background-color: bisque;
+    color: aqua;
+}
+.div2{
+    width: 200px;
+    height: 200px;
+    border: 2px solid blueviolet;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    background-color:cornflowerblue;
+    background-image: url(/HTML/images/convenience\ store.jpeg);
+    margin-left: 100px;
+    position: relative;
+    bottom: 150px;
+}
+.div2:hover{
+   
+    color: aqua;
+    visibility:hidden;
+}
+
+
+.div3{
+    width: 200px;
+    height: 200px;
+    border: 2px solid blueviolet;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    background-color:darkkhaki;
+    background-image: url(/HTML/images/groceries.webp);
+    margin-left: 200px;
+    position: relative;
+    bottom: 250px;
+  
+}
+.div3:hover{
+    z-index: 2;
+    color: aqua;
+}
+
+.div4{
+    width: 200px;
+    height: 200px;
+    border: 2px solid blueviolet;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    background-color:crimson ;
+    background-image: url(/HTML/images/apples-line.jpg);
+    margin-left: 300px;
+    position: relative;
+    bottom: 350px;
+   
+}
+.div4:hover{
+   
+    color: aqua;
+}
+.div5{
+    width: 200px;
+    height: 200px;
+    border: 2px solid blueviolet;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    background-color:chartreuse;
+    background-image: url(/HTML/images/images.jpeg);
+    margin-left: 400px;
+    position: relative;
+    bottom: 450px;
+  
+    
+}
+.div5:hover{
+   
+    color: aqua;
+}
+.div5:active{
+    background-color:yellow;
+    z-index: 2;
+}
+
+.div6{
+    width: 200px;
+    height: 200px;
+    border: 2px solid blueviolet;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    background-color:brown;
+    margin-left: 500px;
+    position: relative;
+    bottom: 550px;
+   
+}
+.div6:hover{
+   background-color: blue;
+    color: aqua;
+}
+.div6:active{
+    background-color:black;
+   
+    
+}
+.div7{
+    width: 200px;
+    height: 200px;
+    border: 2px solid blueviolet;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    background-color:olive;
+    margin-left: 600px;
+    position:absolute;
+    bottom: 190px;
+    left: 70px;
+}
+.div7:hover{
+    background-color: antiquewhite;
+    color: aqua;
+}
