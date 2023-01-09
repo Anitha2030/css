@@ -1,0 +1,84 @@
+:root{
+    --var1:rgba(255, 166, 0, 0.712);
+    --var2:rgb(87, 209, 87);
+    --var3:rgb(0, 110, 255);
+    --var4:rgb(223, 124, 200);
+    --var5:rgb(119, 0, 255);
+    --var7:rgb(0, 255, 229);
+    
+}
+.div1{
+    width:300px;
+    height:150px;
+    font-size:larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 70px;
+    color: var(--var4);
+    background-color: var(--var2);
+    animation-name: animation1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position:relative;
+}
+@keyframes animation1{
+    0%{background-color: var(--var3);left:0px;}
+    20%{background-color: var(--var5);left:100px;}
+    50%{background-color: var(--var1);left:300px;}
+    100%{background-color: var(--var7);left:500px;}
+}
+.div2{
+width:300px;
+height:250px;
+background-image: url("/HTML/images/newyear3.jpeg");
+animation-name: animation2;
+animation-duration: 6s;
+animation-iteration-count: infinite;
+position:relative;
+}
+@keyframes animation2{
+    0%{background-image:url("/HTML/images/newyear2.jpeg");left:0px;}
+    20%{background-image:url("/HTML/images/new\ year.jpeg");left:100px;}
+    50%{background-image:url("/HTML/images/newyear5.jpeg");left:300px;}
+    100%{background-image:url("/HTML/images/newyear7.jpeg") ;left:500px;}
+}
+body{
+    --var6:rgb(254, 167, 167);
+    background-color:var(--var6) ;
+    background-image: url("/html/images/newyear.jpeg");
+    background-size: cover;
+}
+h1{
+    color:var(--var5);
+    text-align: center;
+}
+input,.b1,.b2{
+    width:90px;
+    height:50px;
+    transition: background-color 3s;
+}
+input{
+    background-color: purple;
+    color: white;
+}
+.b1{
+    background-color:darkolivegreen;
+    color:coral;
+}
+.b2{
+    background-color:cornflowerblue;
+    color:chartreuse;
+}
+input:hover{
+    background-color: green;
+    color:darkmagenta
+}
+.b1:hover{
+    background-color: blue;
+    color:beige;
+
+}
+.b2:hover{
+    background-color:brown;
+    color:yellow;
+
+}
