@@ -1,0 +1,36 @@
+.head1{
+    color: azure;
+   font-size: 40px;
+   margin-top: 10px;
+   font-family: cursive;
+   float: left;
+   
+   }
+  .div3 a{ 
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    font-family: cursive;
+    font-weight: bolder;
+    padding:30px 30px 30px 0px;
+    font-size:larger;
+    margin-left: 100px;
+    
+    }
+    .nav1 .div3{
+      background-color: orange;
+      background-size: cover;
+      position: fixed;
+      top: 0;
+      width:100%;
+    }
+    .h1{
+      margin-left: 550px;
+      font-size: 300%;
+      color:cornsilk;
+    }
+    body{
+        background-image: url(/HTML/images/green-curry.jpeg);
+        background-repeat: no-repeat;
+        background-size:cover;
+    }

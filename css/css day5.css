@@ -1,0 +1,49 @@
+
+.p1{
+font-size: 2em;
+background-color: aqua;
+}
+.p2{
+    font-size: 2rem;
+    background-color: blueviolet;
+}
+.p3{
+width: 200vh;
+height:50vh;
+background-color: burlywood;
+}
+.p4{
+    width: 150vh;
+    height:70vh;
+    background-color:brown;
+    }
+    .d1::before{
+        content:"Everyday";
+        color:white;
+    }
+   
+    .d1{
+        border:2px dashed;
+        font-size: 2rem;
+    }
+    @media (min-width:900px) and (max-width:1000px)
+    {
+        body{
+       background-color: blue; 
+        }
+    }
+    .d2::after{
+        content:"Everyday";
+        color:white;
+    }
+   
+    .d2{
+        border:2px dashed;
+        font-size: 2rem;
+    }
+    @media (max-width:900px) and (min-width:700px)
+    {
+        body{
+       background-color:green; 
+        }
+    }

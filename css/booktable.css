@@ -1,0 +1,59 @@
+.head1{
+    color: azure;
+   font-size: 40px;
+   margin-top: 10px;
+   font-family: cursive;
+   float: left;
+   
+   }
+  .div3 a{ 
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    font-family: cursive;
+    font-weight: bolder;
+    padding:30px 30px 30px 0px;
+    font-size:larger;
+    margin-left: 100px;
+    
+    }
+    .nav1 .div3{
+      background-color: orange;
+      background-size: cover;
+      position: fixed;
+      top: 0;
+      width:100%;
+     }
+     .div3 a:hover{
+        background-color: bisque;
+        background-size: cover;
+      }
+      .field{
+        margin-left: 500px;
+        width:400px;
+        height:550px;
+      }
+      .h1{
+        text-align: center;
+      }
+      .num{
+        top: 10px;
+        left: 10px;
+
+      }
+      .book1{
+        text-align: center;
+        font-size:x-large;
+        
+      }
+      .book{
+        padding: 15px 25px 15px 25px;
+        font-size: 70%;
+      }
+      body{
+        background-image: url(/HTML/images/full\ menu.jpeg);
+        background-size: cover;
+      }
+      .field{
+        background-color:moccasin;
+      }
