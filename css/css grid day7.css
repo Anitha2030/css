@@ -1,0 +1,36 @@
+.parent{
+    background-color: coral;
+    display:grid;
+    row-gap: 5px;
+    column-gap: 5px;
+    width:1000px;
+    height:650px;
+    text-align: center;
+    grid-template-areas: 
+    'd1 d1'
+    'd2 d2'
+    'd3 d4'
+    'd3 d4'
+    'd3 d5';
+}
+.d1, .d2, .d3, .d4, .d5{
+background-color: gray;
+}
+.d1{grid-area: d1;}
+.d2{grid-area: d2;}
+.d3{grid-area: d3;}
+.d4{grid-area: d4;}
+.d5{grid-area: d5;}
+
+.d1{
+    height:50px;
+    padding-top: 30px;
+    
+}
+.d2{height:30px;
+padding-bottom: 20px;}
+.d3{height:500px;
+width:350px;}
+.d4{
+   width: 650px;
+}

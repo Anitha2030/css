@@ -1,0 +1,139 @@
+.d1{grid-area: d1;}
+.d2{grid-area: d2;}
+.d3{grid-area: d3;}
+.d4{grid-area: d4;}
+.d5{grid-area: d5;}
+.parent{
+    background-color:darkslategray;
+    display:grid;
+    row-gap: 5px;
+    grid-template-areas: 
+    'd1 d1 d1 '
+    'd1 d1 d1 '
+    'd2 d2 d2'
+    'd3 d3 d3'
+    'd4 d4 d4'
+    'd5 d5 d5'
+    'd6 d6 d6';
+
+}
+body{
+    background-color: darksalmon;
+}
+
+.d1{
+    font-size: 40px;
+    color:orange;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+.d1 img{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+   /* margin-left: 250px;*/
+    margin-top: 30px;
+    margin-right: 300px;
+    float:left;
+    box-shadow: 2px 1px 12px 12px orange;
+    animation: rotate 15s infinite linear;
+}
+@keyframes rotate{
+    from{transform:rotate(0deg)}
+    from{transform: rotate(360deg);}
+}
+.d1>h2{
+   text-shadow: 10px 10px 10px navy;
+}
+.d1{
+    height:120px;
+}
+.d3>img{
+  width:1420px;
+  height:350px;}
+
+ /* .d3 img{
+  animation-name: ani2;
+  animation-duration: 3s;
+ 
+}
+@keyframes ani2{
+    0%{background-image: url(/HTML/images/background3.jpeg);}
+    20%{background-image: url(/HTML/images/background7.jpeg);}
+    50%{background-image: url(/html/images/background5.jpeg);}
+    100%{background-image: url(/HTML/images/background4.jpeg);}
+}*/
+ .d3>p{
+    color:orange;
+    font-size: larger;
+    margin-left: 50px;
+}
+ .d4, .img1{
+    animation-name: ani1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+ }
+ @keyframes ani1{
+    0%{background-image: url(/HTML/images/background3.jpeg);background-size: cover;}
+    20%{background-image: url(/HTML/images/background7.jpeg);background-size: cover;}
+    50%{background-image: url(/HTML/images/background5.jpeg);background-size: cover;}
+    100%{background-image: url(/HTML/images/background8.webp);background-size: cover;}
+ }
+
+.d5 iframe{
+ 
+    height:250px;
+    float:right;
+    margin-right: 300px;
+}
+.d5{margin-left: 100px; 
+    margin-right: 100px;
+    
+border: dashed 1px;
+}
+.d2 a{text-shadow: 10px 10px 10px navy;
+        color:orange;
+       margin-left: 150px;
+        list-style: none;
+        text-decoration: none;
+        display: inline-block;
+        font-family: cursive;
+        font-weight: bolder;
+        padding:30px 30px 30px 0px;
+        font-size:larger;
+      
+        }
+    .d4 img{
+        width:300px;
+        height:300px;
+       align-content: space-between;
+       display:inline;
+        margin-left: 100px;
+        border-radius: 50%;
+        box-shadow: 8px 8px 15px orange;
+         }
+         .d4, .img1{
+            animation-name: ani1;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+         }
+         @keyframes ani1{
+            0%{background-image: url(/HTML/images/background3.jpeg);background-size: cover;}
+            20%{background-image: url(/HTML/images/background7.jpeg);background-size: cover;}
+            50%{background-image: url(/HTML/images/background5.jpeg);background-size: cover;}
+            100%{background-image: url(/HTML/images/background8.webp);background-size: cover;}
+         }
+   .d5 > h1{
+    font-size: xx-large; 
+    text-align: center;
+    color: orange;
+}
+.d5> h3{ text-align: center; color:orange;}
+    .d5> p{ text-align: center;
+    color: orange;}
+   .d6{
+   margin-left: 600px;
+   color: orange;
+  
+   }
+   

@@ -1,0 +1,61 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');*/
+.navbar{
+    position:sticky;
+    left:0;
+    top:0;
+    z-index:100;
+    padding: .5rem 5rem;
+    box-shadow:5px 5px 20px rgba(0,0,0,0.5);
+    background: black;
+}
+.navbar .navbar-brand{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+#navbarSupportedContent a{
+    color:white;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid ;
+}
+#navbarSupportedContent button{
+    background:black;
+    color:white;
+    width:5rem;
+    border-radius: 15px;
+}
+section{
+    width:100%;
+    height:50vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ #home{
+    /*background-image: url(/HTML/images/backimg.jpeg);
+    background-size: cover;
+background-position: center;*/
+flex-direction: column;
+    
+ }
+ body{
+   background-image: url(/HTML/images/backimg4.jpeg);
+    background-size: cover;
+ }
+
+ #home h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    font-size: 50px;
+    text-shadow: 5px 5px 10px black;
+ }
+#home p{
+    color: white;
+    font-size: 20px;
+}
+.card{
+    background-color:rgb(19, 19, 29);
+    color:white;
+}
