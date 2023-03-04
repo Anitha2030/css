@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://www.tutorjoes.in/JS_tutorial/food_shopping_cart_in_js -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="icon" type="image/ico" href="https://www.tutorjoes.in/img/logo.png">
+<title>Shopping Cart - JavaScript</title>
+<script src="./Shopping Cart - JavaScript_files/f.txt"></script><script async="" src="./Shopping Cart - JavaScript_files/async-ads.js"></script><script src="./Shopping Cart - JavaScript_files/f(1).txt"></script><script src="./Shopping Cart - JavaScript_files/f(2).txt" id="google_shimpl"></script><script async="" src="./Shopping Cart - JavaScript_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WLKW5H6VSE');
+</script>
+<script async="" src="./Shopping Cart - JavaScript_files/f(3).txt" crossorigin="anonymous" data-checked-head="true"></script>
+<meta name="google-site-verification" content="t9tj850UIVQnJ5pwD0ilLLoLZclLX4XUsYPNua0NqO8">
+<meta name="Description" content="JS Projects,Cart in js,Javascript Tutorial,Javascript Tutorial for Beginners, Javascript Complete Tutorial,Easy  Shopping Cart in HTML CSS and JS">
+<meta name="Keywords" content="Javascript,#tutorjoes,Programming,Tutorial,Javascript Tutorial,HTML,CSS,JS,shopping cart using html css and javascript ,shopping cart html css code ,shopping cart javascript ,shopping cart ,add to cart html css code ,responsive shopping cart html css ,shopping cart html code free ,shopping cart design html,Shopping cart, JavaScript, e-commerce, shopping cart logic, add to cart, remove from cart, dynamic cart">
+<link rel="stylesheet" href="./Shopping Cart - JavaScript_files/bootstrap.min.css">
+<link rel="stylesheet" href="./Shopping Cart - JavaScript_files/style.css">
+<link href="./Shopping Cart - JavaScript_files/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<meta http-equiv="origin-trial" content="Az6AfRvI8mo7yiW5fLfj04W21t0ig6aMsGYpIqMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+USTya+tNvDPaxUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41LHHRFxoaBwoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD91CiGyHHSA2hDG9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><script src="./Shopping Cart - JavaScript_files/cse_element__en.js" type="text/javascript"></script><link type="text/css" rel="stylesheet" href="./Shopping Cart - JavaScript_files/default+en.css"><link type="text/css" rel="stylesheet" href="./Shopping Cart - JavaScript_files/default.css"><link rel="preload" href="./Shopping Cart - JavaScript_files/f(4).txt" as="script"><script type="text/javascript" src="./Shopping Cart - JavaScript_files/f(4).txt"></script><link rel="preload" href="./Shopping Cart - JavaScript_files/f(5).txt" as="script"><script type="text/javascript" src="./Shopping Cart - JavaScript_files/f(5).txt"></script><style type="text/css">.gsc-control-cse{font-family:arial, sans-serif}.gsc-control-cse .gsc-table-result{font-family:arial, sans-serif}.gsc-refinementsGradient{background:linear-gradient(to left,rgba(255,255,255,1),rgba(255,255,255,0))}.gsc-control-cse{border-color:#FFFFFF;background-color:#FFFFFF}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus{border-color:#D9D9D9}.gsc-search-button-v2,.gsc-search-button-v2:hover,.gsc-search-button-v2:focus{border-color:#3B3B98;background-color:#3B3B98;background-image:none;filter:none}.gsc-search-button-v2 svg{fill:#FFFFFF}.gsc-tabHeader.gsc-tabhActive,.gsc-refinementHeader.gsc-refinementhActive{color:#1A73E8;border-color:#1A73E8;background-color:#FFFFFF}.gsc-tabHeader.gsc-tabhInactive,.gsc-refinementHeader.gsc-refinementhInactive{color:#666666;border-color:#666666;background-color:#FFFFFF}.gsc-webResult.gsc-result,.gsc-results .gsc-imageResult{border-color:#FFFFFF;background-color:#FFFFFF}.gsc-webResult.gsc-result:hover{border-color:#FFFFFF;background-color:#FFFFFF}.gs-webResult.gs-result a.gs-title:link,.gs-webResult.gs-result a.gs-title:link b,.gs-imageResult a.gs-title:link,.gs-imageResult a.gs-title:link b{color:#1155CC}.gs-webResult.gs-result a.gs-title:visited,.gs-webResult.gs-result a.gs-title:visited b,.gs-imageResult a.gs-title:visited,.gs-imageResult a.gs-title:visited b{color:#1155CC}.gs-webResult.gs-result a.gs-title:hover,.gs-webResult.gs-result a.gs-title:hover b,.gs-imageResult a.gs-title:hover,.gs-imageResult a.gs-title:hover b{color:#1155CC}.gs-webResult.gs-result a.gs-title:active,.gs-webResult.gs-result a.gs-title:active b,.gs-imageResult a.gs-title:active,.gs-imageResult a.gs-title:active b{color:#1155CC}.gsc-cursor-page{color:#1155CC}a.gsc-trailing-more-results:link{color:#1155CC}.gs-webResult:not(.gs-no-results-result):not(.gs-error-result) .gs-snippet,.gs-fileFormatType{color:#333333}.gs-webResult div.gs-visibleUrl{color:#009933}.gs-webResult div.gs-visibleUrl-short{color:#009933}.gsc-cursor-box{border-color:#FFFFFF}.gsc-results .gsc-cursor-box .gsc-cursor-page{border-color:#666666;background-color:#FFFFFF;color:#666666}.gsc-results .gsc-cursor-box .gsc-cursor-current-page{border-color:#1A73E8;background-color:#FFFFFF;color:#1A73E8}.gsc-webResult.gsc-result.gsc-promotion{border-color:#F6F6F6;background-color:#F6F6F6}.gsc-completion-title{color:#1155CC}.gsc-completion-snippet{color:#333333}.gs-promotion a.gs-title:link,.gs-promotion a.gs-title:link *,.gs-promotion .gs-snippet a:link{color:#1155CC}.gs-promotion a.gs-title:visited,.gs-promotion a.gs-title:visited *,.gs-promotion .gs-snippet a:visited{color:#1155CC}.gs-promotion a.gs-title:hover,.gs-promotion a.gs-title:hover *,.gs-promotion .gs-snippet a:hover{color:#1155CC}.gs-promotion a.gs-title:active,.gs-promotion a.gs-title:active *,.gs-promotion .gs-snippet a:active{color:#1155CC}.gs-promotion .gs-snippet,.gs-promotion .gs-title .gs-promotion-title-right,.gs-promotion .gs-title .gs-promotion-title-right *{color:#333333}.gs-promotion .gs-visibleUrl,.gs-promotion .gs-visibleUrl-short{color:#009933}.gcsc-find-more-on-google{color:#1155CC}.gcsc-find-more-on-google-magnifier{fill:#1155CC}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{vertical-align:middle;opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gssb_a{padding:0 9px}.gsib_a{padding:5px 9px 4px 9px}.gscb_a{line-height:27px}.gssb_e{border:0}.gssb_l{margin:5px 0}input.gsc-input::-webkit-input-placeholder{font-size:14px}input.gsc-input:-moz-placeholder{font-size:14px}input.gsc-input::-moz-placeholder{font-size:14px}input.gsc-input:-ms-input-placeholder{font-size:14px}input.gsc-input:focus::-webkit-input-placeholder{color:transparent}input.gsc-input:focus:-moz-placeholder{color:transparent}input.gsc-input:focus::-moz-placeholder{color:transparent}input.gsc-input:focus:-ms-input-placeholder{color:transparent}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style></head>
+<body style="padding: 0px;">
+<style>
+	.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+
+</style>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+           <a class="navbar-brand" href="https://www.tutorjoes.in/"> Tutor Joe's Stanley </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="https://www.tutorjoes.in/JS_tutorial/food_shopping_cart_in_js#">Programming
+				<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="https://www.tutorjoes.in/c_programming_tutorial/index">C Programming</a></li>
+					<li><a href="https://www.tutorjoes.in/cpp_programming_tutorial/index">C++ Programming</a></li>
+					<li><a href="https://www.tutorjoes.in/java_programming_tutorial/index">Java Programming</a></li>
+					<li><a href="https://www.tutorjoes.in/python_programming_tutorial/index">Python</a></li>
+					<li><a href="https://www.tutorjoes.in/dart_programming_tutorial/index">Dart Programming</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="https://www.tutorjoes.in/JS_tutorial/food_shopping_cart_in_js#"> Mobile Application
+				<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="https://www.tutorjoes.in/flutter_framework_tutorial/index">Flutter Mobile Apps Development</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="https://www.tutorjoes.in/JS_tutorial/food_shopping_cart_in_js#"> Office Automation 
+				<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="https://www.tutorjoes.in/accounts/index"> Basic of Accounts</a></li>
+					<li><a href="https://www.tutorjoes.in/tally_erp9_tutorial/index">Tally ERP9</a></li>
+					<li><a href="https://www.tutorjoes.in/tally_prime_tutorial/index">Tally Prime</a></li>
+					<li><a href="https://www.tutorjoes.in/microsoft_excel_tutorial/index">Microsoft Excel</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="https://www.tutorjoes.in/JS_tutorial/food_shopping_cart_in_js#"> Web Designing 
+				<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="https://www.tutorjoes.in/html_tutorial/index">HTML</a></li>
+					<li><a href="https://www.tutorjoes.in/html5_tutorial/index">HTML5</a></li>
+					<li><a href="https://www.tutorjoes.in/css_tutorial/index">CSS</a></li>
+					<li><a href="https://www.tutorjoes.in/bootstrap3_tutorial/index">Bootstrap3</a></li>
+					<li><a href="https://www.tutorjoes.in/JS_tutorial/index">Javascript</a></li>
+					<li><a href="https://www.tutorjoes.in/Jquery_tutorial/index">JQuery</a></li>
+					<li><a href="https://www.tutorjoes.in/fpdf_tutorial/index">PHP FPDF</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="https://www.tutorjoes.in/JS_tutorial/food_shopping_cart_in_js#"> Database 
+				<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="https://www.tutorjoes.in/mysql_tutorial/index">MySQL</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="https://www.tutorjoes.in/JS_tutorial/food_shopping_cart_in_js#">More 
+				<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="https://www.tutorjoes.in/pages/about">About Us</a></li>
+					<li><a href="https://www.tutorjoes.in/pages/contact">Contact Us</a></li>
+					<li><a href="https://www.tutorjoes.in/blog/index">Blogs</a></li>
+				</ul>
+			</li>
+			<li><a href="https://www.tutorjoes.in/bootcamp/index">Bootcamp</a></li>
+      </ul>
+    </div>
+  </div>
+</nav><div class="google-auto-placed" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-5122657307634712" data-adsbygoogle-status="done" style="display: block; margin: 10px auto 21px; background-color: transparent; height: 280px;" data-ad-status="filled"><div id="aswift_1_host" style="border: none; height: 280px; width: 1200px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:1200px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1200" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Shopping Cart - JavaScript_files/ads.html" data-google-container-id="a!2" data-google-query-id="CPOxpae49_wCFRTfYgod1FwG2Q" data-load-complete="true"></iframe></div></ins></div><div class="container-fluid" style="height: auto !important;"><div class="row" style="height: auto !important;">
+<div class="col-md-9">
+	<h3>Shopping Cart - JavaScript</h3><hr>
+<p class="para">
+A shopping cart is the most important component of an eCommerce website. It stores all basic information related to products that customers added to their buying list. An ideal shopping cart comes with all basic features including adding, removing products, calculating price, and locally storing cart information for non-logged users. This hand-picked collection of JavaScript shopping cart projects helps you to quickly find out the best frontend "add to cart" functionality for your website
+</p>
+<p class="para">A Shopping Cart in JavaScript is a script that allows users to add and remove items from a cart, typically on an e-commerce website. The script uses JavaScript to dynamically update the cart display based on user interactions, such as adding or removing items. The shopping cart script typically uses an array to store the items in the cart, and it also uses functions to add and remove items from the cart.</p>
+<p class="para">The script generally includes the following elements:</p>
+<ul class="points">
+	<li>A container to hold the items in the cart</li>
+	<li>A function to add items to the cart</li>
+	<li>A function to remove items from the cart</li>
+	<li>A function to calculate the total cost of the items in the cart</li>
+	<li>An event listener to add items to the cart when the user clicks the 'Add to Cart' button</li>
+	<li>An event listener to remove items from the cart when the user clicks the 'Remove' button</li>
+	<li>A display of the number of items in the cart and the total cost</li>
+	<li>The ability to save the cart data to the local storage or a cookie</li>
+</ul>
+<p class="para">In addition, the script should be able to handle dynamic data changes, such as new items being added or removed from the cart, without breaking the cart functionality. It also should have the feature of displaying the cart summary on the top of the page.</p>
+<div class="embed-responsive embed-responsive-16by9" style="margin-bottom:30px;">
+	<iframe class="embed-responsive-item" src="./Shopping Cart - JavaScript_files/Fg3ElJtS6S4.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+<h4 class="blog-sub-title"> Source Code</h4>
+<pre style="font-family:monospace;color:#000000;background:#ffffff;border:none;"><span style="color:#004a43; ">&lt;!DOCTYPE html&gt;</span>
+<span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">html</span><span style="color:#274796; "> </span><span style="color:#074726; ">lang</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"en"</span><span style="color:#a65700; ">&gt;</span>
+<span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">head</span><span style="color:#a65700; ">&gt;</span>
+  <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">meta</span><span style="color:#274796; "> </span><span style="color:#074726; ">charset</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"UTF-8"</span><span style="color:#a65700; ">&gt;</span>
+  <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">meta</span><span style="color:#274796; "> </span><span style="color:#074726; ">http-equiv</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"X-UA-Compatible"</span><span style="color:#274796; "> </span><span style="color:#074726; ">content</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"IE=edge"</span><span style="color:#a65700; ">&gt;</span>
+  <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">meta</span><span style="color:#274796; "> </span><span style="color:#074726; ">name</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"viewport"</span><span style="color:#274796; "> </span><span style="color:#074726; ">content</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"width=device-width, initial-scale=1.0"</span><span style="color:#a65700; ">&gt;</span>
+  <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">title</span><span style="color:#a65700; ">&gt;</span>Document<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">title</span><span style="color:#a65700; ">&gt;</span>
+  <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">link</span><span style="color:#274796; "> </span><span style="color:#074726; ">rel</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"stylesheet"</span><span style="color:#274796; "> </span><span style="color:#074726; ">href</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"css/style.css"</span><span style="color:#a65700; ">&gt;</span>
+  <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">script</span><span style="color:#274796; "> </span><span style="color:#074726; ">type</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"module"</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">script</span><span style="color:#a65700; ">&gt;</span>
+
+<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">head</span><span style="color:#a65700; ">&gt;</span>
+<span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">body</span><span style="color:#a65700; ">&gt;</span>
+  <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">header</span><span style="color:#a65700; ">&gt;</span>
+    <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"nav"</span><span style="color:#a65700; ">&gt;</span>
+
+      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">a</span><span style="color:#274796; "> </span><span style="color:#074726; ">href</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"#"</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"logo"</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#274796; "> </span><span style="color:#074726; ">name</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"fast-food"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#a65700; ">&gt;</span>
+        Food Delight
+      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">a</span><span style="color:#a65700; ">&gt;</span>
+
+      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"box"</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"cart-count"</span><span style="color:#a65700; ">&gt;</span><span style="color:#008c00; ">0</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#274796; "> </span><span style="color:#074726; ">name</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"cart"</span><span style="color:#274796; ">  </span><span style="color:#074726; ">id</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"cart-icon"</span><span style="color:#274796; "> </span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#a65700; ">&gt;</span>
+      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+
+      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"cart"</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"cart-title"</span><span style="color:#a65700; ">&gt;</span>Cart Items<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"cart-content"</span><span style="color:#a65700; ">&gt;</span>
+<span style="color:#696969; ">&lt;!--</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cart-box"&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="images/97.jpg" class="cart-img"&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="detail-box"&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cart-food-title"&gt;Special Dosai&lt;/div&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="price-box"&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cart-price"&gt;Rs.72&lt;/div&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cart-amt"&gt;Rs.72&lt;/div&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="number" value="1" class="cart-quantity"&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ion-icon name="trash" class="cart-remove"&gt;&lt;/ion-icon&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span>
+<span style="color:#696969; "></span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cart-box"&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="images/97.jpg" class="cart-img"&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="detail-box"&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cart-food-title"&gt;Special Dosai&lt;/div&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="price-box"&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cart-price"&gt;Rs.72&lt;/div&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cart-amt"&gt;Rs.72&lt;/div&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="number" value="1" class="cart-quantity"&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ion-icon name="trash" class="cart-remove"&gt;&lt;/ion-icon&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span>
+<span style="color:#696969; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&gt;</span>
+        <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+        
+      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"total"</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"total-title"</span><span style="color:#a65700; ">&gt;</span>Total<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"total-price"</span><span style="color:#a65700; ">&gt;</span>Rs<span style="color:#008c00; ">.0</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+
+      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">button</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"btn-buy"</span><span style="color:#a65700; ">&gt;</span>Place Order<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">button</span><span style="color:#a65700; ">&gt;</span>
+
+      <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#274796; "> </span><span style="color:#074726; ">name</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"close"</span><span style="color:#274796; "> </span><span style="color:#074726; ">id</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"cart-close"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#a65700; ">&gt;</span>
+
+      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+    <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+  <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">header</span><span style="color:#a65700; ">&gt;</span>
+  <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"container"</span><span style="color:#a65700; ">&gt;</span>
+    <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"title"</span><span style="color:#a65700; ">&gt;</span>Discover the Best Food<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#a65700; ">&gt;</span>
+    <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"shop-content"</span><span style="color:#a65700; ">&gt;</span>
+
+
+      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-box"</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"pic"</span><span style="color:#a65700; ">&gt;</span>
+          <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"images/97.jpg"</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-img"</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-title"</span><span style="color:#a65700; ">&gt;</span>Plain<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-price"</span><span style="color:#a65700; ">&gt;</span>Rs<span style="color:#008c00; ">.40</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#274796; "> </span><span style="color:#074726; ">name</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"cart"</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"add-cart"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#a65700; ">&gt;</span>
+      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+
+
+      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-box"</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"pic"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"images/98.jpg"</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-img"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-title"</span><span style="color:#a65700; ">&gt;</span>Paper Roast<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-price"</span><span style="color:#a65700; ">&gt;</span>Rs<span style="color:#008c00; ">.65</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#274796; "> </span><span style="color:#074726; ">name</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"cart"</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"add-cart"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#a65700; ">&gt;</span>
+      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+  
+      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-box"</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"pic"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"images/99.jpg"</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-img"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-title"</span><span style="color:#a65700; ">&gt;</span>Onion Roast<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-price"</span><span style="color:#a65700; ">&gt;</span>Rs<span style="color:#008c00; ">.80</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#274796; "> </span><span style="color:#074726; ">name</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"cart"</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"add-cart"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#a65700; ">&gt;</span>
+      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+  
+      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-box"</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"pic"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"images/100.jpg"</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-img"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-title"</span><span style="color:#a65700; ">&gt;</span>Egg Parotta<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-price"</span><span style="color:#a65700; ">&gt;</span>Rs<span style="color:#008c00; ">.55</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#274796; "> </span><span style="color:#074726; ">name</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"cart"</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"add-cart"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#a65700; ">&gt;</span>
+      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+  
+      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-box"</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"pic"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"images/101.jpg"</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-img"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-title"</span><span style="color:#a65700; ">&gt;</span>Plain Omelette<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-price"</span><span style="color:#a65700; ">&gt;</span>Rs<span style="color:#008c00; ">.25</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#274796; "> </span><span style="color:#074726; ">name</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"cart"</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"add-cart"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#a65700; ">&gt;</span>
+      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+  
+      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-box"</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"pic"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"images/102.jpg"</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-img"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-title"</span><span style="color:#a65700; ">&gt;</span>Kadai Fry<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-price"</span><span style="color:#a65700; ">&gt;</span>Rs<span style="color:#008c00; ">.150</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#274796; "> </span><span style="color:#074726; ">name</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"cart"</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"add-cart"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#a65700; ">&gt;</span>
+      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+  
+  
+      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-box"</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"pic"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"images/103.jpg"</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-img"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-title"</span><span style="color:#a65700; ">&gt;</span>Egg Veechu<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-price"</span><span style="color:#a65700; ">&gt;</span>Rs<span style="color:#008c00; ">.65</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#274796; "> </span><span style="color:#074726; ">name</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"cart"</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"add-cart"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#a65700; ">&gt;</span>
+      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+  
+  
+      <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-box"</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"pic"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">img</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"images/104.jpg"</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-img"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-title"</span><span style="color:#a65700; ">&gt;</span>Egg Roast<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"food-price"</span><span style="color:#a65700; ">&gt;</span>Rs<span style="color:#008c00; ">.65</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span>
+        <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#274796; "> </span><span style="color:#074726; ">name</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"cart"</span><span style="color:#274796; "> </span><span style="color:#074726; ">class</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"add-cart"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">ion-icon</span><span style="color:#a65700; ">&gt;</span>
+      <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+  
+
+
+
+
+    <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+  <span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">div</span><span style="color:#a65700; ">&gt;</span>
+  <span style="color:#a65700; ">&lt;</span><span style="color:#800000; font-weight:bold; ">script</span><span style="color:#274796; "> </span><span style="color:#074726; ">src</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"js/script.js"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">script</span><span style="color:#a65700; ">&gt;</span>
+<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">body</span><span style="color:#a65700; ">&gt;</span>
+<span style="color:#a65700; ">&lt;/</span><span style="color:#800000; font-weight:bold; ">html</span><span style="color:#a65700; ">&gt;</span>
+</pre>
+
+<h4 class="blog-sub-title"> css/style.css</h4>
+<pre style="font-family:monospace;color:#000000;background:#ffffff;border:none;"><span style="color:#800080; ">@</span><span style="color:#004a43; ">import</span> <span style="color:#400000; ">url</span><span style="color:#808030; ">(</span><span style="color:#0000e6; ">'</span><span style="color:#666616; ">https</span><span style="color:#800080; ">:</span><span style="color:#800000; font-weight:bold; ">//</span><span style="color:#5555dd; ">fonts.googleapis.com</span><span style="color:#40015a; ">/css2</span><span style="color:#800000; font-weight:bold; ">?</span><span style="color:#074726; ">family=Poppins:wght@200;300;400;500;600;700;800;900&amp;display=swap</span><span style="color:#0000e6; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+
+<span style="color:#808030; ">*</span><span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">font-family</span><span style="color:#808030; ">:</span> <span style="color:#800000; ">'</span><span style="color:#0000e6; ">Poppins</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span> <span style="color:#074726; ">sans-serif</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">margin</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">padding</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">box-sizing</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">border-box</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#800000; font-weight:bold; ">body</span><span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">background-color</span><span style="color:#808030; ">:</span><span style="color:#008c00; ">#</span><span style="color:#008000; ">4b4b4b</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#800000; font-weight:bold; ">header</span><span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">position</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">fixed</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">top</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">left</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">width</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">100</span><span style="color:#006600; ">%</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">z-index</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">99</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">background-color</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">ff4757</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>nav<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">max-width</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1200</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">margin</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">auto</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">width</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">100</span><span style="color:#006600; ">%</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">height</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">50</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">display</span><span style="color:#808030; ">:</span> flex<span style="color:#800080; ">;</span>
+  <span style="color:#008484; ">justify-content</span><span style="color:#808030; ">:</span> space-between<span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">align-items</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">center</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>logo<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">font-size</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1.1</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">font-weight</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">500</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">text-decoration</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">none</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">text-transform</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">uppercase</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">color</span><span style="color:#808030; ">:</span><span style="color:#008c00; ">#</span><span style="color:#008000; ">ffffff</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>box<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">color</span><span style="color:#808030; ">:</span><span style="color:#797997; ">white</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">width</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">30</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">height</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">30</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">text-align</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">center</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">position</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">relative</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>cart-count<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">position</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">absolute</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">background-color</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">2f3542</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">top</span><span style="color:#808030; ">:</span> <span style="color:#808030; ">-</span><span style="color:#008c00; ">5</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">right</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">padding</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">3</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">height</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">20</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">width</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">20</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">line-height</span><span style="color:#808030; ">:</span><span style="color:#008c00; ">20</span><span style="color:#006600; ">px</span> <span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">border-radius</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">50</span><span style="color:#006600; ">%</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">z-index</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">99</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">#</span>cart-icon<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">font-size</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1.5</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">cursor</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">pointer</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">padding-top</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">10</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#800000; font-weight:bold; ">img</span><span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">width</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">100</span><span style="color:#006600; ">%</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>container<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">max-width</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1200</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">padding</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">4</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">margin</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">auto</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">width</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">100</span><span style="color:#006600; ">%</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#800000; font-weight:bold; ">h2</span><span style="color:#808030; ">.</span>title<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">font-size</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1.1</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">font-weight</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">500</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">margin-bottom</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1.5</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">color</span><span style="color:#808030; ">:</span><span style="color:#008c00; ">#</span><span style="color:#008000; ">ffffff</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>shop-content<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">display</span><span style="color:#808030; ">:</span> grid<span style="color:#800080; ">;</span>
+  grid-template-columns<span style="color:#808030; ">:</span> repeat<span style="color:#808030; ">(</span>auto-fit<span style="color:#808030; ">,</span>minmax<span style="color:#808030; ">(</span><span style="color:#008c00; ">220</span><span style="color:#006600; ">px</span><span style="color:#808030; ">,</span><span style="color:#074726; ">auto</span><span style="color:#808030; ">)</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+  gap<span style="color:#808030; ">:</span><span style="color:#008c00; ">1.5</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+  <span style="color:#008484; ">justify-content</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">center</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">align-content</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">center</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>food-box<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">position</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">relative</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">background-color</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">fff</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">padding</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">10</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">box-shadow</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span> <span style="color:#008c00; ">1</span><span style="color:#006600; ">px</span> <span style="color:#008c00; ">4</span><span style="color:#006600; ">px</span> <span style="color:#400000; ">rgba</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">40</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">37</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">37</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">0.1</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">border-radius</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">3</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>pic<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">overflow</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">hidden</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>pic<span style="color:#800080; ">:</span><span style="color:#800000; font-weight:bold; ">hover</span> <span style="color:#800000; font-weight:bold; ">img</span><span style="color:#800080; ">{</span>
+<span style="color:#bb7977; font-weight:bold; ">transform</span><span style="color:#808030; ">:</span> <span style="color:#400000; ">scale</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">1.5</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>food-img<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">transition</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0.</span><span style="color:#008c00; ">4</span><span style="color:#006600; ">s</span><span style="color:#800080; ">;</span>
+  aspect-ratio<span style="color:#808030; ">:</span> <span style="color:#008c00; ">1</span>/<span style="color:#008c00; ">1</span><span style="color:#800080; ">;</span>
+  object-fit<span style="color:#808030; ">:</span> cover<span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>food-title<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">font-size</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">font-weight</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">600</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">color</span><span style="color:#808030; ">:</span><span style="color:#008c00; ">#</span><span style="color:#008000; ">ff6348</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>food-price<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">font-weight</span><span style="color:#808030; ">:</span><span style="color:#008c00; ">500</span> <span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>add-cart<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">position</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">absolute</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">bottom</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">right</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">background-color</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">#</span><span style="color:#008000; ">2ed573</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">color</span><span style="color:#808030; ">:</span><span style="color:#797997; ">white</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">padding</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">10</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">font-size</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1.1</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">cursor</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">pointer</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">transition</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0.</span><span style="color:#008c00; ">5</span><span style="color:#006600; ">s</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>add-cart<span style="color:#800080; ">:</span><span style="color:#800000; font-weight:bold; ">hover</span><span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">background-color</span><span style="color:#808030; ">:</span><span style="color:#400000; ">rgba</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">255</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">0.786</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+  
+
+<span style="color:#808030; ">.</span>cart<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">position</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">fixed</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">top</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">right</span><span style="color:#808030; ">:</span> <span style="color:#808030; ">-</span><span style="color:#008c00; ">100</span><span style="color:#006600; ">%</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">width</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">400</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">height</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">100</span><span style="color:#006600; ">vh</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">overflow-y</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">auto</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">overflow-x</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">hidden</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">padding</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">20</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">background-color</span><span style="color:#808030; ">:</span> <span style="color:#797997; ">white</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">box-shadow</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span> <span style="color:#008c00; ">1</span><span style="color:#006600; ">px</span> <span style="color:#008c00; ">4</span><span style="color:#006600; ">px</span> <span style="color:#400000; ">rgba</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">40</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">37</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">37</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">0.1</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">z-index</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">100</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>cart-active<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">right</span><span style="color:#808030; ">:</span><span style="color:#008c00; ">0</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">transition</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0.</span><span style="color:#008c00; ">5</span><span style="color:#006600; ">s</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>cart-title<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">text-align</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">center</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">font-size</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1.5</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">font-weight</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">500</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">margin-bottom</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">padding-bottom</span><span style="color:#808030; ">:</span><span style="color:#008c00; ">20</span><span style="color:#006600; ">px</span> <span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">border-bottom</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1</span><span style="color:#006600; ">px</span> <span style="color:#074726; ">solid</span> <span style="color:#400000; ">rgba</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0.1</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>cart-box<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">display</span><span style="color:#808030; ">:</span> grid<span style="color:#800080; ">;</span>
+  grid-template-columns<span style="color:#808030; ">:</span> <span style="color:#008c00; ">32</span><span style="color:#006600; ">%</span> <span style="color:#008c00; ">50</span><span style="color:#006600; ">%</span> <span style="color:#008c00; ">18</span><span style="color:#006600; ">%</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">align-items</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">center</span><span style="color:#800080; ">;</span>
+  gap<span style="color:#808030; ">:</span> <span style="color:#008c00; ">1</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">margin-top</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">border-bottom</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1</span><span style="color:#006600; ">px</span> <span style="color:#074726; ">solid</span> <span style="color:#400000; ">rgba</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0.1</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">padding-bottom</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">10</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>cart-img<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">width</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">75</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">height</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">75</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span>
+  object-fit<span style="color:#808030; ">:</span> cover<span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">border</span><span style="color:#808030; ">:</span><span style="color:#008c00; ">2</span><span style="color:#006600; ">px</span> <span style="color:#074726; ">solid</span>  <span style="color:#400000; ">rgba</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0.1</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">padding</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">5</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+<span style="color:#808030; ">.</span>detail-box<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">display</span><span style="color:#808030; ">:</span> grid<span style="color:#800080; ">;</span>
+  row-gap<span style="color:#808030; ">:</span> <span style="color:#008c00; ">0.5</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>  
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>price-box<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">display</span><span style="color:#808030; ">:</span> flex<span style="color:#800080; ">;</span>
+    <span style="color:#008484; ">justify-content</span><span style="color:#808030; ">:</span> space-between<span style="color:#800080; ">;</span> 
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>cart-food-title<span style="color:#800080; ">{</span>
+   <span style="color:#bb7977; font-weight:bold; ">font-size</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+   <span style="color:#bb7977; font-weight:bold; ">text-transform</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">uppercase</span><span style="color:#800080; ">;</span>
+   <span style="color:#bb7977; font-weight:bold; ">color</span><span style="color:#808030; ">:</span><span style="color:#008c00; ">#</span><span style="color:#008000; ">ff6348</span><span style="color:#800080; ">;</span>
+   <span style="color:#bb7977; font-weight:bold; ">font-weight</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">500</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>cart-price<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">font-weight</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">500</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>cart-quantity<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">border</span><span style="color:#808030; ">:</span><span style="color:#008c00; ">1</span><span style="color:#006600; ">px</span> <span style="color:#074726; ">solid</span> <span style="color:#400000; ">rgba</span><span style="color:#808030; ">(</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">,</span><span style="color:#008c00; ">0.1</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">outline</span><span style="color:#808030; ">:</span><span style="color:#074726; ">none</span> <span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">width</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">2.4</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">text-align</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">center</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">font-size</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>cart-remove<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">font-size</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">24</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">color</span><span style="color:#808030; ">:</span><span style="color:#797997; ">red</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">cursor</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">pointer</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>total<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">display</span><span style="color:#808030; ">:</span> flex<span style="color:#800080; ">;</span>
+  <span style="color:#008484; ">justify-content</span><span style="color:#808030; ">:</span> flex-end<span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">margin-top</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1.5</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>total-title<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">font-size</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">font-weight</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">600</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>total-price<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">margin-left</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0.5</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">.</span>btn-buy<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">padding</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">12</span><span style="color:#006600; ">px</span> <span style="color:#008c00; ">20</span><span style="color:#006600; ">px</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">background-color</span><span style="color:#808030; ">:</span><span style="color:#008c00; ">#</span><span style="color:#008000; ">2f3542</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">color</span><span style="color:#808030; ">:</span><span style="color:#008c00; ">#</span><span style="color:#008000; ">fff</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">border</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">none</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">font-size</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">font-weight</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">500</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">cursor</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">pointer</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#808030; ">#</span>cart-close<span style="color:#800080; ">{</span>
+  <span style="color:#bb7977; font-weight:bold; ">position</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">absolute</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">top</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">right</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0.8</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">font-size</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">2</span><span style="color:#006600; ">rem</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">cursor</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">pointer</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+</pre>
+<p class="para">This code is for a shopping cart that allows users to add items to a cart and view the cart. When the user clicks on the cart icon <mark>(specified by the '#cart-icon' selector)</mark>, the class 'cart-active' is added to the cart element (specified by the '.cart' selector) which will display the cart to the user. The user can then close the cart by clicking on the '#cart-close' element, which removes the 'cart-active' class from the cart element.</p>
+<p class="para">When the page loads, the <mark>'DOMContentLoaded'</mark> event is listened for and the function <mark>'loadFood'</mark> is called. This function calls another function <mark>'loadContent'</mark> which adds event listeners for removing items from the cart, changing the quantity of items in the cart, and adding items to the cart.</p>
+<p class="para">When an item is added to the cart, the code retrieves the title, price, and image source of the item from the HTML, creates an object of the item, checks if the item already exists in the cart, and if it doesn't, it adds the item to the cart and updates the total cost.</p>
+<p class="para">The <mark>'updateTotal'</mark> function calculates the total cost of all the items in the cart by iterating through each cart item, getting the price and quantity of the item, and updating the total accordingly.
+</p>
+
+<h4 class="blog-sub-title"> js/script.js</h4>
+<pre style="font-family:monospace;color:#000000;background:#ffffff;border:none;"><span style="color:#800000; font-weight:bold; ">const</span> btnCart<span style="color:#808030; ">=</span>document<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">#cart-icon</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+<span style="color:#800000; font-weight:bold; ">const</span> cart<span style="color:#808030; ">=</span>document<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">.cart</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+<span style="color:#800000; font-weight:bold; ">const</span> btnClose<span style="color:#808030; ">=</span>document<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">#cart-close</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+
+btnCart<span style="color:#808030; ">.</span>addEventListener<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">click</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span><span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#808030; ">=</span><span style="color:#808030; ">&gt;</span><span style="color:#800080; ">{</span>
+  cart<span style="color:#808030; ">.</span>classList<span style="color:#808030; ">.</span>add<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">cart-active</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+
+btnClose<span style="color:#808030; ">.</span>addEventListener<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">click</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span><span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#808030; ">=</span><span style="color:#808030; ">&gt;</span><span style="color:#800080; ">{</span>
+  cart<span style="color:#808030; ">.</span>classList<span style="color:#808030; ">.</span>remove<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">cart-active</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+
+document<span style="color:#808030; ">.</span>addEventListener<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">DOMContentLoaded</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span>loadFood<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+
+<span style="color:#800000; font-weight:bold; ">function</span> loadFood<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">{</span>
+  loadContent<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+
+<span style="color:#800080; ">}</span>
+
+<span style="color:#800000; font-weight:bold; ">function</span> loadContent<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">{</span>
+  <span style="color:#696969; ">//Remove Food Items  From Cart</span>
+  <span style="color:#800000; font-weight:bold; ">let</span> btnRemove<span style="color:#808030; ">=</span>document<span style="color:#808030; ">.</span>querySelectorAll<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">.cart-remove</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+  btnRemove<span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">forEach</span><span style="color:#808030; ">(</span><span style="color:#808030; ">(</span>btn<span style="color:#808030; ">)</span><span style="color:#808030; ">=</span><span style="color:#808030; ">&gt;</span><span style="color:#800080; ">{</span>
+    btn<span style="color:#808030; ">.</span>addEventListener<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">click</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span>removeItem<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+  <span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+
+  <span style="color:#696969; ">//Product Item Change Event</span>
+  <span style="color:#800000; font-weight:bold; ">let</span> qtyElements<span style="color:#808030; ">=</span>document<span style="color:#808030; ">.</span>querySelectorAll<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">.cart-quantity</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+  qtyElements<span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">forEach</span><span style="color:#808030; ">(</span><span style="color:#808030; ">(</span><span style="color:#797997; ">input</span><span style="color:#808030; ">)</span><span style="color:#808030; ">=</span><span style="color:#808030; ">&gt;</span><span style="color:#800080; ">{</span>
+    <span style="color:#797997; ">input</span><span style="color:#808030; ">.</span>addEventListener<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">change</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span>changeQty<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+  <span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+
+  <span style="color:#696969; ">//Product Cart</span>
+  
+  <span style="color:#800000; font-weight:bold; ">let</span> cartBtns<span style="color:#808030; ">=</span>document<span style="color:#808030; ">.</span>querySelectorAll<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">.add-cart</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+  cartBtns<span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">forEach</span><span style="color:#808030; ">(</span><span style="color:#808030; ">(</span>btn<span style="color:#808030; ">)</span><span style="color:#808030; ">=</span><span style="color:#808030; ">&gt;</span><span style="color:#800080; ">{</span>
+    btn<span style="color:#808030; ">.</span>addEventListener<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">click</span><span style="color:#800000; ">'</span><span style="color:#808030; ">,</span>addCart<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+  <span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+
+  updateTotal<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+
+<span style="color:#696969; ">//Remove Item</span>
+<span style="color:#800000; font-weight:bold; ">function</span> removeItem<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">{</span>
+  <span style="color:#800000; font-weight:bold; ">if</span><span style="color:#808030; ">(</span><span style="color:#800000; font-weight:bold; ">confirm</span><span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">Are Your Sure to Remove</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#808030; ">)</span><span style="color:#800080; ">{</span>
+    <span style="color:#800000; font-weight:bold; ">let</span> title<span style="color:#808030; ">=</span><span style="color:#800000; font-weight:bold; ">this</span><span style="color:#808030; ">.</span>parentElement<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">.cart-food-title</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#808030; ">.</span>innerHTML<span style="color:#800080; ">;</span>
+    itemList<span style="color:#808030; ">=</span>itemList<span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">filter</span><span style="color:#808030; ">(</span>el<span style="color:#808030; ">=</span><span style="color:#808030; ">&gt;</span>el<span style="color:#808030; ">.</span>title<span style="color:#808030; ">!=</span>title<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+    <span style="color:#800000; font-weight:bold; ">this</span><span style="color:#808030; ">.</span>parentElement<span style="color:#808030; ">.</span>remove<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+    loadContent<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+  <span style="color:#800080; ">}</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#696969; ">//Change Quantity</span>
+<span style="color:#800000; font-weight:bold; ">function</span> changeQty<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">{</span>
+  <span style="color:#800000; font-weight:bold; ">if</span><span style="color:#808030; ">(</span><span style="color:#800000; font-weight:bold; ">isNaN</span><span style="color:#808030; ">(</span><span style="color:#800000; font-weight:bold; ">this</span><span style="color:#808030; ">.</span>value<span style="color:#808030; ">)</span> <span style="color:#808030; ">||</span> <span style="color:#800000; font-weight:bold; ">this</span><span style="color:#808030; ">.</span>value<span style="color:#808030; ">&lt;</span><span style="color:#008c00; ">1</span><span style="color:#808030; ">)</span><span style="color:#800080; ">{</span>
+    <span style="color:#800000; font-weight:bold; ">this</span><span style="color:#808030; ">.</span>value<span style="color:#808030; ">=</span><span style="color:#008c00; ">1</span><span style="color:#800080; ">;</span>
+  <span style="color:#800080; ">}</span>
+  loadContent<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#800000; font-weight:bold; ">let</span> itemList<span style="color:#808030; ">=</span><span style="color:#808030; ">[</span><span style="color:#808030; ">]</span><span style="color:#800080; ">;</span>
+
+<span style="color:#696969; ">//Add Cart</span>
+<span style="color:#800000; font-weight:bold; ">function</span> addCart<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">{</span>
+ <span style="color:#800000; font-weight:bold; ">let</span> food<span style="color:#808030; ">=</span><span style="color:#800000; font-weight:bold; ">this</span><span style="color:#808030; ">.</span>parentElement<span style="color:#800080; ">;</span>
+ <span style="color:#800000; font-weight:bold; ">let</span> title<span style="color:#808030; ">=</span>food<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">.food-title</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#808030; ">.</span>innerHTML<span style="color:#800080; ">;</span>
+ <span style="color:#800000; font-weight:bold; ">let</span> price<span style="color:#808030; ">=</span>food<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">.food-price</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#808030; ">.</span>innerHTML<span style="color:#800080; ">;</span>
+ <span style="color:#800000; font-weight:bold; ">let</span> imgSrc<span style="color:#808030; ">=</span>food<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">.food-img</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#808030; ">.</span>src<span style="color:#800080; ">;</span>
+ <span style="color:#696969; ">//console.log(title,price,imgSrc);</span>
+ 
+ <span style="color:#800000; font-weight:bold; ">let</span> newProduct<span style="color:#808030; ">=</span><span style="color:#800080; ">{</span>title<span style="color:#808030; ">,</span>price<span style="color:#808030; ">,</span>imgSrc<span style="color:#800080; ">}</span>
+
+ <span style="color:#696969; ">//Check Product already Exist in Cart</span>
+ <span style="color:#800000; font-weight:bold; ">if</span><span style="color:#808030; ">(</span>itemList<span style="color:#808030; ">.</span>find<span style="color:#808030; ">(</span><span style="color:#808030; ">(</span>el<span style="color:#808030; ">)</span><span style="color:#808030; ">=</span><span style="color:#808030; ">&gt;</span>el<span style="color:#808030; ">.</span>title<span style="color:#808030; ">==</span>newProduct<span style="color:#808030; ">.</span>title<span style="color:#808030; ">)</span><span style="color:#808030; ">)</span><span style="color:#800080; ">{</span>
+  <span style="color:#800000; font-weight:bold; ">alert</span><span style="color:#808030; ">(</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">Product Already added in Cart</span><span style="color:#800000; ">"</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+  <span style="color:#800000; font-weight:bold; ">return</span><span style="color:#800080; ">;</span>
+ <span style="color:#800080; ">}</span><span style="color:#800000; font-weight:bold; ">else</span><span style="color:#800080; ">{</span>
+  itemList<span style="color:#808030; ">.</span>push<span style="color:#808030; ">(</span>newProduct<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+ <span style="color:#800080; ">}</span>
+
+
+<span style="color:#800000; font-weight:bold; ">let</span> newProductElement<span style="color:#808030; ">=</span> createCartProduct<span style="color:#808030; ">(</span>title<span style="color:#808030; ">,</span>price<span style="color:#808030; ">,</span>imgSrc<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+<span style="color:#800000; font-weight:bold; ">let</span> element<span style="color:#808030; ">=</span>document<span style="color:#808030; ">.</span>createElement<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">div</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+element<span style="color:#808030; ">.</span>innerHTML<span style="color:#808030; ">=</span>newProductElement<span style="color:#800080; ">;</span>
+<span style="color:#800000; font-weight:bold; ">let</span> cartBasket<span style="color:#808030; ">=</span>document<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">.cart-content</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+cartBasket<span style="color:#808030; ">.</span>append<span style="color:#808030; ">(</span>element<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+loadContent<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+
+<span style="color:#800000; font-weight:bold; ">function</span> createCartProduct<span style="color:#808030; ">(</span>title<span style="color:#808030; ">,</span>price<span style="color:#808030; ">,</span>imgSrc<span style="color:#808030; ">)</span><span style="color:#800080; ">{</span>
+
+  <span style="color:#800000; font-weight:bold; ">return</span><span style="color:#800000; "> `</span><span style="color:#0000e6; "></span>
+<span style="color:#0000e6; ">&nbsp;&nbsp;&lt;div class="cart-box"&gt;</span>
+<span style="color:#0000e6; ">&nbsp;&nbsp;&lt;img src="</span><span style="color:#800000; ">${</span><span style="color:#797997; ">imgSrc</span><span style="color:#800000; ">}</span><span style="color:#0000e6; ">" class="cart-img"&gt;</span>
+<span style="color:#0000e6; ">&nbsp;&nbsp;&lt;div class="detail-box"&gt;</span>
+<span style="color:#0000e6; ">&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cart-food-title"&gt;</span><span style="color:#800000; ">${</span><span style="color:#797997; ">title</span><span style="color:#800000; ">}</span><span style="color:#0000e6; ">&lt;/div&gt;</span>
+<span style="color:#0000e6; ">&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="price-box"&gt;</span>
+<span style="color:#0000e6; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cart-price"&gt;</span><span style="color:#800000; ">${</span><span style="color:#797997; ">price</span><span style="color:#800000; ">}</span><span style="color:#0000e6; ">&lt;/div&gt;</span>
+<span style="color:#0000e6; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="cart-amt"&gt;</span><span style="color:#800000; ">${</span><span style="color:#797997; ">price</span><span style="color:#800000; ">}</span><span style="color:#0000e6; ">&lt;/div&gt;</span>
+<span style="color:#0000e6; ">&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span>
+<span style="color:#0000e6; ">&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="number" value="1" class="cart-quantity"&gt;</span>
+<span style="color:#0000e6; ">&nbsp;&nbsp;&lt;/div&gt;</span>
+<span style="color:#0000e6; ">&nbsp;&nbsp;&lt;ion-icon name="trash" class="cart-remove"&gt;&lt;/ion-icon&gt;</span>
+<span style="color:#0000e6; ">&lt;/div&gt;</span>
+<span style="color:#0000e6; ">&nbsp;&nbsp;</span><span style="color:#800000; ">`</span><span style="color:#800080; ">;</span>
+<span style="color:#800080; ">}</span>
+
+<span style="color:#800000; font-weight:bold; ">function</span> updateTotal<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span>
+<span style="color:#800080; ">{</span>
+  <span style="color:#800000; font-weight:bold; ">const</span> cartItems<span style="color:#808030; ">=</span>document<span style="color:#808030; ">.</span>querySelectorAll<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">.cart-box</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+  <span style="color:#800000; font-weight:bold; ">const</span> totalValue<span style="color:#808030; ">=</span>document<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">.total-price</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+
+  <span style="color:#800000; font-weight:bold; ">let</span> total<span style="color:#808030; ">=</span><span style="color:#008c00; ">0</span><span style="color:#800080; ">;</span>
+
+  cartItems<span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">forEach</span><span style="color:#808030; ">(</span>product<span style="color:#808030; ">=</span><span style="color:#808030; ">&gt;</span><span style="color:#800080; ">{</span>
+    <span style="color:#800000; font-weight:bold; ">let</span> priceElement<span style="color:#808030; ">=</span>product<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">.cart-price</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+    <span style="color:#800000; font-weight:bold; ">let</span> price<span style="color:#808030; ">=</span><span style="color:#800000; font-weight:bold; ">parseFloat</span><span style="color:#808030; ">(</span>priceElement<span style="color:#808030; ">.</span>innerHTML<span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">replace</span><span style="color:#808030; ">(</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">Rs.</span><span style="color:#800000; ">"</span><span style="color:#808030; ">,</span><span style="color:#800000; ">"</span><span style="color:#800000; ">"</span><span style="color:#808030; ">)</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+    <span style="color:#800000; font-weight:bold; ">let</span> qty<span style="color:#808030; ">=</span>product<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">.cart-quantity</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#808030; ">.</span>value<span style="color:#800080; ">;</span>
+    total<span style="color:#808030; ">+=</span><span style="color:#808030; ">(</span>price<span style="color:#808030; ">*</span>qty<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+    product<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">.cart-amt</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#808030; ">.</span>innerText<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">Rs.</span><span style="color:#800000; ">"</span><span style="color:#808030; ">+</span><span style="color:#808030; ">(</span>price<span style="color:#808030; ">*</span>qty<span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+
+  <span style="color:#800080; ">}</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+
+  totalValue<span style="color:#808030; ">.</span>innerHTML<span style="color:#808030; ">=</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">Rs.</span><span style="color:#800000; ">'</span><span style="color:#808030; ">+</span>total<span style="color:#800080; ">;</span>
+
+
+  <span style="color:#696969; ">// Add Product Count in Cart Icon</span>
+
+  <span style="color:#800000; font-weight:bold; ">const</span> cartCount<span style="color:#808030; ">=</span>document<span style="color:#808030; ">.</span>querySelector<span style="color:#808030; ">(</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">.cart-count</span><span style="color:#800000; ">'</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+  <span style="color:#800000; font-weight:bold; ">let</span> count<span style="color:#808030; ">=</span>itemList<span style="color:#808030; ">.</span><span style="color:#800000; font-weight:bold; ">length</span><span style="color:#800080; ">;</span>
+  cartCount<span style="color:#808030; ">.</span>innerHTML<span style="color:#808030; ">=</span>count<span style="color:#800080; ">;</span>
+
+  <span style="color:#800000; font-weight:bold; ">if</span><span style="color:#808030; ">(</span>count<span style="color:#808030; ">==</span><span style="color:#008c00; ">0</span><span style="color:#808030; ">)</span><span style="color:#800080; ">{</span>
+    cartCount<span style="color:#808030; ">.</span>style<span style="color:#808030; ">.</span>display<span style="color:#808030; ">=</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">none</span><span style="color:#800000; ">'</span><span style="color:#800080; ">;</span>
+  <span style="color:#800080; ">}</span><span style="color:#800000; font-weight:bold; ">else</span><span style="color:#800080; ">{</span>
+    cartCount<span style="color:#808030; ">.</span>style<span style="color:#808030; ">.</span>display<span style="color:#808030; ">=</span><span style="color:#800000; ">'</span><span style="color:#0000e6; ">block</span><span style="color:#800000; ">'</span><span style="color:#800080; ">;</span>
+  <span style="color:#800080; ">}</span>
+
+
+<span style="color:#800080; ">}</span>
+</pre>
+
+
+<br>
+<h4 class="blog-sub-title">Output</h4>
+<img src="./Shopping Cart - JavaScript_files/12_shopping_cart.jpg" alt="Shoppin Cart" class="img-responsive pre col-md-6">
+<br style="clear:both;"><br>
+ <a href="https://www.tutorjoes.in/public/js_program/12_cart/" class="btn btn-sm btn-primary" target="_blank"> Live Preview <i class="fa fa-angle-right"></i></a>
+<br><br><hr>
+<p class="para">Overall, a Shopping Cart in JavaScript provides an interactive and informative way for users to manage the items in their cart and it can be easily integrated into e-commerce websites, online shops, and other web applications where a shopping cart system is required.</p>
+
+<ul class="pager">
+  <li class="previous"><a href="https://www.tutorjoes.in/JS_tutorial/product_rating_in_js">Previous</a></li>
+  <li class="next"><a href="https://www.tutorjoes.in/JS_tutorial/generate_qrcode_in_js">Next</a></li>
+</ul>
+</div>
+<div class="col-md-3" style="height: auto !important; min-height: 0px !important;">
+<h3>List of Programs</h3><hr>
+<div id="___gcse_0"><div class="gsc-control-cse gsc-control-cse-en"><div class="gsc-control-wrapper-cse" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" role="presentation" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" role="presentation" id="gs_id50" class="gstl_50 gsc-input" style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="search" aria-label="search" id="gsc-i-id1" dir="ltr" spellcheck="false" style="width: 100%; padding: 0px; border: none; margin: -0.0625em 0px 0px; height: 1.25em; background: url(&quot;https://www.google.com/cse/static/images/1x/en/branding.png&quot;) left center no-repeat rgb(255, 255, 255); outline: none;"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" title="Clear search box" role="button" style="display: none;"><span class="gscb_a" id="gs_cb50" aria-hidden="true">×</span></a></div></td></tr></tbody></table></div></td><td class="gsc-search-button"><button class="gsc-search-button gsc-search-button-v2"><svg width="13" height="13" viewBox="0 0 13 13"><title>search</title><path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path></svg></button></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table></form><div class="gsc-results-wrapper-overlay"><div class="gsc-results-close-btn" tabindex="0"></div><div class="gsc-positioningWrapper"><div class="gsc-tabsAreaInvisible"><div aria-label="refinement" role="tab" class="gsc-tabHeader gsc-inline-block gsc-tabhActive">Web</div><span class="gs-spacer"> </span><div tabindex="0" aria-label="refinement" role="tab" class="gsc-tabHeader gsc-tabhInactive gsc-inline-block">Image</div><span class="gs-spacer"> </span></div></div><div class="gsc-positioningWrapper"><div class="gsc-refinementsAreaInvisible"></div></div><div class="gsc-above-wrapper-area-invisible"><table cellspacing="0" cellpadding="0" role="presentation" class="gsc-above-wrapper-area-container"><tbody><tr><td class="gsc-result-info-container"><div class="gsc-result-info-invisible"></div></td><td class="gsc-orderby-container"><div class="gsc-orderby-invisible"><div class="gsc-orderby-label gsc-inline-block">Sort by:</div><div class="gsc-option-menu-container gsc-inline-block"><div class="gsc-selected-option-container gsc-inline-block"><div class="gsc-selected-option">Relevance</div><div class="gsc-option-selector"></div></div><div class="gsc-option-menu-invisible"><div class="gsc-option-menu-item gsc-option-menu-item-highlighted"><div class="gsc-option">Relevance</div></div><div class="gsc-option-menu-item"><div class="gsc-option">Date</div></div></div></div></div></td></tr></tbody></table></div><div class="gsc-adBlockInvisible"></div><div class="gsc-wrapper"><div class="gsc-adBlockInvisible"></div><div class="gsc-resultsbox-invisible"><div class="gsc-resultsRoot gsc-tabData gsc-tabdActive"><div><div class="gsc-expansionArea"></div></div></div><div class="gsc-resultsRoot gsc-tabData gsc-tabdInactive"><div><div class="gsc-expansionArea"></div></div></div></div></div></div><div class="gsc-modal-background-image" tabindex="0"></div></div></div></div>
+<ul class="nav nav-stacked">
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/index">JavaScript Introduction</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/basic_program_in_javascript">Basic Program in JavaScript</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/console_in_javascript">Console in JavaScript</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/var_let_const_in_javascript">var , let , const in JavaScript</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/datatypes_in_javascript">DataTypes  in JavaScript</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/type_conversion_in_javascript">Type Conversion in JavaScript</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/type_coercion_in_javascript">Type Coercion in JavaScript</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/arithmetic_operation_in_javascript">Arithmetic Operation  in JavaScript</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/assignment_operators_in_javascript">Assignment Operators in JavaScript</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/math_functions_in_javascript">Math Functions in JavaScript</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/comparison_operators_in_javascript">Comparison Operators in JavaScript</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/relational_operators_in_javascript">Relational Operators in JavaScript</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/logical_operators_in_javascript">Logical Operators in JavaScript </a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/string_function_in_javascript">String Function in JavaScript </a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/template_literals_in_javascript">Template Literals in JavaScript </a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/array_function_in_javascript">Array Function in JavaScript </a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/primitive_and_reference_data_types_in_javascript">Primitive and Reference Data Types </a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/multiple_ways_to_clone_an_array_in_javascript">Multiple ways to clone an array </a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/use_of_const_for_creating_arrays_in_javascript">Use of const for Creating Arrays </a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/array_and_object_de_structuring_in_javascript">Array and Object De-structuring</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/arrays_object_in_javascript">Arrays &amp; Object</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/creating_objects_in_javascript">Creating Objects</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/dot_notation_and_bracket_notation_in_javascript">Dot Notation and Bracket Notation</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/iterating_through_javascript_objects_in_javascript">Iterating Through JavaScript Objects</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/computed_property_names_in_javascript">Computed Property Names</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/spread_operator_in_javascript">Spread Operator</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/objects_inside_arrays_in_javascript">Objects inside Arrays</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/function_in_javascript">Function in JavaScript</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/block_scope_and_function_scope">Block Scope and Function Scope</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/rest_parameter_vs_spread">Rest Parameter vs Spread</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/parameter_destructuring_in_javascript">Parameter Destructuring in JavaScript</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/callback_functions_in_javascript">Callback Functions in JavaScript</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/closure_functions">Closure Functions</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/foreach_in_javascript">forEach in JavaScript</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/filter_practical_samples_in_javascript">Filter Practical Samples</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/map_practical_samples_in_javascript">Map Practical Samples</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/reduce_practical_samples_in_javascript">Reduce Practical Samples</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/optional_chaining_in_javascript">Optional Chaining in JavaScript</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/function_inside_object_in_javascript">Function Inside Object</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/call_apply_and_bind_in_javascript">Call Apply and Bind in JavaScript</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/arrow_function_vs_this_keyword_in_javascript">Arrow Function vs this Keyword</a></li>
+
+	
+
+
+
+
+
+
+
+
+
+
+<!--<li><a href="https://www.tutorjoes.in/JS_tutorial/change_content_using_getelementbyid_in_javascript">Change Content using getElementById</a></li>
+<li><a href="https://www.tutorjoes.in/JS_tutorial/change_image_using_getelementbyid_in_javascript">Change Image in Javascript</a></li>
+<li><a href="https://www.tutorjoes.in/JS_tutorial/change_style_using_getelementbyid_in_javascript">Change Style in Javascript</a></li>
+<li><a href="https://www.tutorjoes.in/JS_tutorial/hide_and_show_paragraph_in_javascript">Hide and Show Paragraph in Javascript</a></li>--->
+</ul>
+
+<h3>JS Practical Project</h3><hr>
+<ul class="nav nav-stacked">
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/food_court">Food Court</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/automatic_countdown_timer_in_js">Automatic Countdown Timer</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/digital_clock_in_js">Digital Clock in JS</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/analog_clock_in_js">Analog Clock</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/stop_clock_in_js">Stylish Stop Clock</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/css_code_tools_in_js">CSS Code Tools</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/sticky_notes_in_js">Sticky Note</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/photo_gallery_in_js">Photo Gallery</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/password_generator_in_js">Password Generator</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/product_filter_in_js">Product Filter</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/product_cart_slider_in_js">Product Cart Slider</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/product_rating_in_js">Product Rating</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/food_shopping_cart_in_js" class="active_page">Shopping Cart</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/generate_qrcode_in_js">QR Code Generator</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/tic_tac_toe_in_js">Tic Tac Toe Game</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/image_slider_in_js">Image Carousel</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/tab_control_in_js">Tab Control</a></li>
+
+	<h3>JS Membership Project</h3><hr>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/countdown_timer_in_js">Countdown Timer</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/digital_timer_clock_in_js">Digital Timer Clock in JS</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/analog_wall_clock_in_js">Analog Wall Clock</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/stylish_stop_watch_in_js">Stylish Stop Watch</a></li>
+	<li><a href="https://www.tutorjoes.in/JS_tutorial/click_to_copy_text_in_js">Click to Copy Code</a></li>
+</ul>
+
+
+
+<div class="google-auto-placed" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-5122657307634712" data-adsbygoogle-status="done" style="display: block; margin: 10px auto; background-color: transparent; height: 250px;" data-ad-status="filled"><div id="aswift_2_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 250px; width: 330px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;"><iframe id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0;width:330px;height:250px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="330" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Shopping Cart - JavaScript_files/ads(1).html" data-google-container-id="a!3" data-google-query-id="CMO4g6m49_wCFY-RpwodeQwHSg" data-load-complete="true"></iframe></div></ins></div></div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+	<hr>
+		<p align="center" style="padding-top:30px;"><a href="https://www.youtube.com/learnallintamil" target="_blank">Learn All in Tamil</a> © Designed &amp; Developed By <a href="http://www.tutorjoes.com/">Tutor Joes</a> | 
+		<a href="https://www.tutorjoes.in/pages/privacy">Privacy Policy</a> | <a href="https://www.tutorjoes.in/pages/terms">Terms &amp; Conditions</a></p>
+	</div>
+</div>
+
+
+</div>
+<script src="./Shopping Cart - JavaScript_files/jquery.min.js"></script><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Shopping Cart - JavaScript_files/ads(2).html" data-google-container-id="a!1" data-load-complete="true"></iframe></div></ins>
+<script src="./Shopping Cart - JavaScript_files/bootstrap.min.js"></script>
+<script async="" src="./Shopping Cart - JavaScript_files/f(6).txt"></script>
+<script src="./Shopping Cart - JavaScript_files/main.js"></script>
+
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.smenu').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+<table cellspacing="0" cellpadding="0" role="presentation" class="gstl_50 gssb_c" style="width: 520px; display: none; top: 13054px; position: absolute; left: 29px;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" data-anchor-status="displayed" style="display: none; width: 100% !important; height: 95px !important; bottom: 0px; clear: none !important; float: none !important; left: 0px; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1; overflow: visible !important; padding: 0px !important; position: fixed; right: auto !important; top: auto !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647; background: rgb(250, 250, 250) !important;" data-ad-status="filled" data-anchor-shown="true"><div class="grippy-host"></div><div id="aswift_3_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none !important; height: 90px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;"><iframe id="aswift_3" name="aswift_3" style="width: 728px !important; height: 90px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Shopping Cart - JavaScript_files/zrt_lookup.html" data-google-container-id="a!4" data-google-query-id="CLXio6e49_wCFc6QpwodRWoGBQ" data-load-complete="true"></iframe></div></ins><iframe src="./Shopping Cart - JavaScript_files/aframe.html" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="./Shopping Cart - JavaScript_files/zrt_lookup(1).html" style="display: none;"></iframe></html>
