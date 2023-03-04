@@ -1,0 +1,3 @@
+INFO:root:Divided 2 / 3 = 0.6666666666666666
+INFO:root:Divided 4 / 2 = 2.0
+WARNING:root:User attempted to divide by zero
