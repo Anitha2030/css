@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Shopping Cart Project</title>
+    <!-- link from ionicons - to get icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <!-- creating nav bar -->
+      <div class="nav">
+        <!-- adding name and icon in the nav bar -->
+        <a href="#" class="logo">
+          <!--  creating icon -->
+          <ion-icon name="flower-outline"></ion-icon>
+          Flowers for Occasions.........
+        </a>
+        <div class="box">
+          <div class="cart-count">0</div>
+          <ion-icon name="cart-outline" id="cart-icon"></ion-icon>
+        </div>
+
+        <!-- Creating div for Cart items -->
+        <!-- <div class="cart cart-active"> -->
+
+        <div class="cart">
+          <!-- cart-title -->
+          <div class="cart-title">Cart Items</div>
+          <!-- cart-content -- what are all products added will be displayed here -->
+          <div class="cart-content">
+            <!-- <div class="cart-box">
+            <img src="/Bootcamp/HTML/images/flowers5.jpeg" class="cart-img" />
+            <div class="detail-box">
+              <div class="cart-flower-title">Special Occasion</div>
+              <div class="price-box">
+                <div class="cart-price">£15.99</div>
+                <div class="cart-amt">£15.99</div>
+              </div>
+
+              <input type="number" value="1" class="cart-quantity" />
+            </div>
+            <ion-icon name="trash" class="cart-remove"></ion-icon>
+          </div>
+
+          <div class="cart-box">
+            <img src="/Bootcamp/html/images/flowers7.jpeg" class="cart-img" />
+            <div class="detail-box">
+              <div class="cart-flower-title">Seasonal Flowers</div>
+              <div class="price-box">
+                <div class="cart-price">£7.99</div>
+                <div class="cart-amt">£7.99</div>
+              </div>
+
+              <input type="number" value="1" class="cart-quantity" />
+            </div>
+            <ion-icon name="trash" class="cart-remove"></ion-icon>
+          </div> -->
+          </div>
+
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">£0</div>
+          </div>
+          <button class="btn-buy">Place Order</button>
+
+          <ion-icon name="close" id="cart-close"></ion-icon>
+        </div>
+      </div>
+    </header>
+
+    <!-- creating items for cart -->
+    <div class="container">
+      <h2 class="title">Discover the Best Flowers</h2>
+      <div class="shop-content">
+        <div class="flower-box">
+          <div class="picture">
+            <img src="./flowers1.jpeg" class="flower-img" />
+          </div>
+          <h2 class="flower-title">The flower of love</h2>
+          <span class="flower-price">£10</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="flower-box">
+          <div class="picture">
+            <img src="./flowers8.jpeg" class="flower-img" />
+          </div>
+          <h2 class="flower-title">A New Day</h2>
+          <span class="flower-price">£13</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="flower-box">
+          <div class="picture">
+            <img src="./flowers4.jpeg" class="flower-img" />
+          </div>
+          <h2 class="flower-title">With sympathy</h2>
+          <span class="flower-price">£15</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="flower-box">
+          <div class="picture">
+            <img src="./flowers5.jpeg" class="flower-img" />
+          </div>
+          <h2 class="flower-title">Pretty in pink</h2>
+          <span class="flower-price">£10</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="flower-box">
+          <div class="picture">
+            <img src="./redflowers2.jpeg" class="flower-img" />
+          </div>
+          <h2 class="flower-title">Be my Valentine</h2>
+          <span class="flower-price">£12</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="flower-box">
+          <div class="picture">
+            <img src="./daisyflowers8.jpeg" class="flower-img" />
+          </div>
+          <h2 class="flower-title">Daisy flowers</h2>
+          <span class="flower-price">£11</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="flower-box">
+          <div class="picture">
+            <img src="./flowers9.jpeg" class="flower-img" />
+          </div>
+          <h2 class="flower-title">Summer breeze</h2>
+          <span class="flower-price">£9</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="flower-box">
+          <div class="picture">
+            <img src="./flowers6.jpeg" class="flower-img" />
+          </div>
+          <h2 class="flower-title">Indian summer</h2>
+          <span class="flower-price">£8</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
